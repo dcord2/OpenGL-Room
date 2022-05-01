@@ -40,34 +40,33 @@ Create a new C++ project and add at least the library and include files these li
 4.
 Then go into the project settings and make these changes (change paths as appropriate after $(SolutionDir) for your directories)
 
--> Project Properties
-Select All Configurations drop down
+A. Project Properties
+A1. Select All Configurations drop down
 
--> C/C++
--> General
--> Additional Include Directories
+B. C/C++
+B1. General
+B2. Additional Include Directories
 $(SolutionDir)Path\To\Include\Folder
-#Repeat for each library
-#now can include "path/file.h" in code
-
+Add path to each library's definitions include folder
+ex:
 $(SolutionDir)ogl_dep\SDL2\include
 $(SolutionDir)ogl_dep\GLEW\include
 $(SolutionDir)ogl_dep\GLM\include
 
--> Linker
--> General
--> Additional Library Directories
+C. Linker
+C1. General
+C2. Additional Library Directories
 $(SolutionDir)Path\To\Library\Folder
-#repeat for each library
-
+Add path to each .lib file
+ex:
 $(SolutionDir)ogl_dep\SDL2\lib
 $(SolutionDir)ogl_dep\GLEW\lib
 
--> Linker
--> Input
--> Additional Dependencies
-Add name of library file
-
+D. Linker
+D1. Input
+D2. Additional Dependencies
+Append names of library files
+ex.
 SDL2.lib;SDL2main.lib;glew32s.lib;opengl32.lib;
 
 
