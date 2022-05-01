@@ -10,6 +10,12 @@ Lazy Foo's SDL tutorials were helpful for getting started with SDL2 - http://www
 The .exe and is in the folder called Release:
 To run the program put the you need to put the resources folder with the shader files is in the same directory as the .exe
 
+Controls:
+-Move your view around with the mouse and WASD
+-The light source can be moved around with the arrow keys and m/n
+-1/2/3 will change the background color
+-Escape quits
+
 /////////////////////////////////////////////////////////////////////
 
 Source code is in the folder called Project3:
@@ -63,9 +69,6 @@ $(SolutionDir)ogl_dep\GLEW\lib
 Add name of library file
 
 SDL2.lib;SDL2main.lib;glew32s.lib;opengl32.lib;
-
-
-
 
 
 
